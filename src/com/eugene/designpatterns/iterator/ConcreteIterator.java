@@ -1,5 +1,9 @@
 package com.eugene.designpatterns.iterator;
 
+/**
+ * 集合迭代器
+ * @param <T>
+ */
 public class ConcreteIterator<T> implements Iterator<T> {
 
     private final ConcreteAggregate<T> concreteAggregate;

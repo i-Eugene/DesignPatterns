@@ -1,5 +1,9 @@
 package com.eugene.designpatterns.iterator;
 
+/**
+ * 集合实体
+ * @param <T>
+ */
 public class ConcreteAggregate<T> implements Aggregate<T> {
     private T[] arr;
     private int size = 0;
