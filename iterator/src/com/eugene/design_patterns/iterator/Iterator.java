@@ -1,4 +1,4 @@
-package com.eugene.designpatterns.iterator;
+package com.eugene.design_patterns.iterator;
 
 /**
  * 迭代器

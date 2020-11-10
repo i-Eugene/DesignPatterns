@@ -1,4 +1,4 @@
-package com.eugene.designpatterns.template_method;
+package com.eugene.design_patterns.template_method;
 
 public class ConcreteClass2 extends AbstractClass {
 

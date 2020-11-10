@@ -1,4 +1,4 @@
-package com.eugene.designpatterns.adapter;
+package com.eugene.design_patterns.adapter;
 
 public class Adaptee {
 
