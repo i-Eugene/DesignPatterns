@@ -4,7 +4,7 @@ import com.eugene.designpatterns.abstractfactory.factory.*;
 
 public class Client {
     public static void main(String[] args) {
-        Factory factory = AbsFactory.getFactory(AbsFactory.FACTORY_1);
+        Factory factory = Factory.getFactory(Factory.FACTORY_1);
         Product p1 = factory.createProduct1();
         Product p2 = factory.createProduct2();
         Product p3 = factory.createProduct3();
