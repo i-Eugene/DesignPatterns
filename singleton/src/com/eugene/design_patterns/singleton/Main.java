@@ -10,9 +10,9 @@ public class Main {
         } else {
             System.out.println("两个枚举不同");
         }
-        Singleton singleton = Singleton.getInstance();
-        Singleton singleton1 = Singleton.getInstance();
-        if (singleton == singleton1) {
+        SingletonInnerClass singletonInnerClass = SingletonInnerClass.getInstance();
+        SingletonInnerClass singletonInnerClass1 = SingletonInnerClass.getInstance();
+        if (singletonInnerClass == singletonInnerClass1) {
             System.out.println("两个实例相同");
         } else {
             System.out.println("两个实例不同");
