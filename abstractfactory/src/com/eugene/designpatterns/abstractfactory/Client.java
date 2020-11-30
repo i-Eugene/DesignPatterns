@@ -1,11 +1,10 @@
 package com.eugene.designpatterns.abstractfactory;
 
-import com.eugene.designpatterns.abstractfactory.concretefactory.ConcreteFactory;
 import com.eugene.designpatterns.abstractfactory.factory.*;
 
 public class Client {
     public static void main(String[] args) {
-        Factory factory = new ConcreteFactory();
+        Factory factory = AbsFactory.getFactory(AbsFactory.FACTORY_1);
         Product p1 = factory.createProduct1();
         Product p2 = factory.createProduct2();
         Product p3 = factory.createProduct3();
