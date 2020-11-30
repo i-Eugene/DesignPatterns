@@ -1,21 +1,10 @@
 package com.eugene.design_patterns.prototype;
 
-public class ConcretePrototype1 implements Prototype {
+public class ConcretePrototype1 extends BaseConcretePrototype {
     private String mDecorator;
 
     public ConcretePrototype1(String decorator) {
         this.mDecorator = decorator;
-    }
-
-    @Override
-    public Prototype createClone() {
-        Prototype prototype = null;
-        try {
-            prototype = (Prototype) clone();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return prototype;
     }
 
     @Override
