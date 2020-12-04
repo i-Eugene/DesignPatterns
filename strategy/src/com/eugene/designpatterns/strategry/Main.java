@@ -1,12 +1,14 @@
 package com.eugene.designpatterns.strategry;
 
+import com.eugene.designpatterns.utils.Utils;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
 
-        if (args.length != 2 || !isDigit(args[0]) || !isDigit(args[1])) {
+        if (args.length != 2 || !Utils.isDigit(args[0]) || !Utils.isDigit(args[1])) {
             System.out.println("请输入两个数字！");
             System.exit(0);
         }
@@ -19,12 +21,6 @@ public class Main {
         System.out.println("----------------------");
         context = new Context(new ConcreteStrategy2());
         context.contextMethod(b, a);
-    }
-
-    public static boolean isDigit(String str) {
-        Pattern pattern = Pattern.compile("-?[0-9]+\\.?[0-9]*");
-        Matcher isNum = pattern.matcher(str);
-        return isNum.matches();
     }
 
 }
