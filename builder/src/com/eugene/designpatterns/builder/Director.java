@@ -10,8 +10,7 @@ public class Director {
 
     public String construct() {
         builder.buildTitle("I am Title");
-        builder.buildString("I am Content1");
-        builder.buildString("I am Content2");
+        builder.buildString("I am Content1").buildString("I am Content2");
         return builder.build();
     }
 }

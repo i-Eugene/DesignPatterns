@@ -4,17 +4,19 @@ public class ConcreteBuilder2 implements Builder {
     StringBuilder builder = new StringBuilder();
 
     @Override
-    public void buildTitle(String title) {
+    public Builder buildTitle(String title) {
         builder.append("===========================");
         builder.append("\n");
         builder.append("《").append(title).append("》");
         builder.append("\n");
+        return this;
     }
 
     @Override
-    public void buildString(String string) {
+    public Builder buildString(String string) {
         builder.append("~").append(string);
         builder.append("\n");
+        return this;
     }
 
     @Override

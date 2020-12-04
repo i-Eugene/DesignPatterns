@@ -1,9 +1,9 @@
 package com.eugene.designpatterns.builder;
 
 public interface Builder {
-    void buildTitle(String title);
+    Builder buildTitle(String title);
 
-    void buildString(String string);
+    Builder buildString(String string);
 
     String build();
 }
