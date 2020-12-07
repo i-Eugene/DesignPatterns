@@ -1,5 +1,6 @@
 package com.eugene.designpatterns.visitor;
 
+import com.eugene.designpatterns.composite.Component;
 import com.eugene.designpatterns.composite.Composite;
 
 
@@ -24,21 +25,18 @@ public class ConcreteElementB extends Composite implements Element {
     }
 
     public static class Iterator {
-        private final ConcreteElementB elementB;
-        private int index = 0;
+        private final java.util.Iterator<Component> iterator;
 
         public Iterator(ConcreteElementB elementB) {
-            this.elementB = elementB;
+            this.iterator = elementB.components.iterator();
         }
 
         public Element next() {
-            Element element = (Element) this.elementB.components.get(index);
-            index++;
-            return element;
+            return (Element) iterator.next();
         }
 
         public boolean hasNext() {
-            return index < this.elementB.components.size();
+            return iterator.hasNext();
         }
 
     }
