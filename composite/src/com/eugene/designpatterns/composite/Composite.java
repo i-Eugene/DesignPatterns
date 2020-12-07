@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Composite extends BaseComponent {
 
-    private List<Component> components = new ArrayList<>();
+    protected List<Component> components = new ArrayList<>();
 
     public Composite(String name) {
         super(name);
