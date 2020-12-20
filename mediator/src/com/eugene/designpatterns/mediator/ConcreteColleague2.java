@@ -17,7 +17,7 @@ public class ConcreteColleague2 extends TextField implements Colleague, TextList
     }
 
     @Override
-    public void setColleagueEnabled(boolean enabled) {
+    public void controlColleague(boolean enabled) {
         setEnabled(enabled);
     }
 

@@ -16,7 +16,7 @@ public class ConcreteColleague1 extends Button implements Colleague {
     }
 
     @Override
-    public void setColleagueEnabled(boolean enabled) {
+    public void controlColleague(boolean enabled) {
         setEnabled(enabled);
     }
 }

@@ -17,7 +17,7 @@ public class ConcreteColleague3 extends Checkbox implements Colleague, ItemListe
     }
 
     @Override
-    public void setColleagueEnabled(boolean enabled) {
+    public void controlColleague(boolean enabled) {
         setEnabled(enabled);
     }
 

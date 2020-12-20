@@ -66,26 +66,26 @@ public class ConcreteMediator extends Frame implements ActionListener, Mediator 
     @Override
     public void colleagueChanged() {
         if (checkGuest.getState()) {
-            textUser.setColleagueEnabled(false);
-            textPass.setColleagueEnabled(false);
-            buttonOK.setColleagueEnabled(true);
+            textUser.controlColleague(false);
+            textPass.controlColleague(false);
+            buttonOK.controlColleague(true);
         } else {
-            textUser.setColleagueEnabled(true);
+            textUser.controlColleague(true);
             userpassChanged();
         }
     }
 
     private void userpassChanged() {
         if (textUser.getText().length() > 0) {
-            textPass.setColleagueEnabled(true);
+            textPass.controlColleague(true);
             if (textPass.getText().length() > 0) {
-                buttonOK.setColleagueEnabled(true);
+                buttonOK.controlColleague(true);
             } else {
-                buttonOK.setColleagueEnabled(false);
+                buttonOK.controlColleague(false);
             }
         } else {
-            textPass.setColleagueEnabled(false);
-            buttonOK.setColleagueEnabled(false);
+            textPass.controlColleague(false);
+            buttonOK.controlColleague(false);
         }
     }
 
